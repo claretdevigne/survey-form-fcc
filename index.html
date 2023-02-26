@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=screen-width scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Claret's Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our platform</p>
+        <form action="https://survey-form/" method="post" id="survey-form">
+          <fieldset id="fieldset-personal">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" placeholder="Insert your name" required>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" placeholder="Insert your email" required>
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" id="number" name="age" placeholder="Insert your age" min="0" max="123">
+          </fieldset>
+          
+          <fieldset id="fieldset-select">
+            <label for="dropdown">How did you hear about us?</label>
+            <select id="dropdown">
+              <option hidden>Select one option</option>
+              <option value="1">Youtube</option>
+              <option value="2">Linkedin</option>
+              <option value="3">Facebook</option>
+            </select>
+          </fieldset>
+          
+          <fieldset id="fieldset-recommend">
+            <label>Would you recommend us to your friends?</label>
+            <input id="recommend-yes" type="radio" name="recommend" value=1 checked>
+            <label for="recommend-yes">Yes</label>
+            <input id="recommend-no" type="radio" name="recommend" value=0>
+            <label for="recommend-no">No</label>
+          </fieldset>
+          
+          <fieldset id="fieldset-checkbox">
+            <label>What would you like to learn?</label>
+            <label for="frontend"><input value='frontend' id="frontend" type="checkbox"> Frontend</label>
+            <label for="backend"><input value='backend' id="backend" type="checkbox"> Backend</label>
+            <label for="fullstack"><input value='fullstack' id="fullstack" type="checkbox"> Fullstack</label>
+          </fieldset>
+          
+          <fieldset id="fieldset-textarea">
+            <label for="textarea">Any comments or suggestions?</label>
+            <textarea id="textarea" rows="10"></textarea> 
+          </fieldset>
+
+          <input id='submit' type="submit">
+      </div>
+      </form>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

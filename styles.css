@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  background: url('https://static.vecteezy.com/system/resources/previews/002/214/642/original/web-designer-and-programmer-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+h1 {
+  margin-bottom: -10px;
+}
+
+p {
+  background-color: rgba(0, 0, 0, 0.017);
+}
+
+#container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  color: white;
+  max-width: 600px; 
+  font-size: larger;
+}
+
+form {
+  background-color:#041025e0;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+}
+
+fieldset {
+  border: none;
+}
+
+#fieldset-personal > *,
+#fieldset-select label,
+#fieldset-recommend label:first-child,
+#fieldset-checkbox label,
+#fieldset-textarea label:first-child {
+  display: block;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input, #dropdown {
+  margin-bottom: 1rem;
+}
+
+#fieldset-personal input,
+select, textarea {
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#fieldset-personal input,
+select {
+  height: 2rem;
+}
+
+textarea {
+  padding: 1rem;
+}
+
+input[type='submit'] {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  background-color: rgb(92, 159, 29);
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+
+
+
